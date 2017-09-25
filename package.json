@@ -1,6 +1,6 @@
 {
     "name": "generator-robin-ng-gen",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "Yeoman Angular Generator based on Angular Best Practices(Angular Style Guide).",
     "keywords": [
         "yeoman-generator",
@@ -12,7 +12,7 @@
     },
     "author": {
         "name": "Daniel Netzer",
-        "email": "",
+        "email": "daniel.netzer7@Gmail.com",
         "url": ""
     },
     "main": "app/index.js",
