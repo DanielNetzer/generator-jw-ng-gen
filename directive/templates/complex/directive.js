@@ -8,6 +8,9 @@
      */
     function <%= _.classify(name) %> () {
 
+        /**
+         * Components Controller
+         */
         function <%= _.classify(name) %>Controller () {
             /***************** PRIVATE *******************/
             var vm = this;
@@ -20,7 +23,7 @@
          * Directives link function
          */
         function _link(scope, iElem, iAttrs, controllers) {
-            // add logic here
+            // add logic here 
         }
 
         
@@ -44,6 +47,5 @@
     /* ANGULAR */
     angular
         .module('<%= appname %>')
-        .directive('<%= _.camelize(name) %>', <%= _.classify(name) %> );
-
+        .directive('<%= _.camelize(name) %>', <%= _.classify(name) %>);
 })();
