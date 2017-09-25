@@ -6,9 +6,9 @@
         "yeoman-generator",
         "angular"
     ],
-    "homepage": "https://github.com/DanielNetzer/generator-jw-ng-gen",
+    "homepage": "https://github.com/DanielNetzer/generator-robin-ng-gen",
     "bugs": {
-        "url": "https://github.com/DanielNetzer/generator-jw-ng-gen/issues"
+        "url": "https://github.com/DanielNetzer/generator-robin-ng-gen/issues"
     },
     "author": {
         "name": "Daniel Netzer",
@@ -18,7 +18,7 @@
     "main": "app/index.js",
     "repository": {
         "type": "git",
-        "url": "https://github.com/DanielNetzer/generator-jw-ng-gen.git"
+        "url": "https://github.com/DanielNetzer/generator-robin-ng-gen.git"
     },
     "scripts": {
         "test": "mocha"

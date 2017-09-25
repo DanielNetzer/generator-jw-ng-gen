@@ -5,14 +5,14 @@
     var helpers = require('yeoman-generator').test;
 
 
-    describe('jw-ng-gen generator', function () {
+    describe('robin-ng-gen generator', function () {
         beforeEach(function (done) {
             helpers.testDirectory(path.join(__dirname, 'temp'), function (err) {
                 if (err) {
                     return done(err);
                 }
 
-                this.app = helpers.createGenerator('jw-ng-gen:app', [
+                this.app = helpers.createGenerator('robin-ng-gen:app', [
             '../../app'
           ]);
                 done();
