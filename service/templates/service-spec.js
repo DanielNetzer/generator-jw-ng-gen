@@ -1,15 +1,15 @@
 (function () {
     'use strict';
 
-    describe('<%= _.camelize(name) %>', function () {
+    describe('<%= _.camelize(name) %>Service', function () {
 
         var service;
 
         beforeEach(function () {
             module('<%= appname %>');
 
-            inject(function ( <%= _.camelize(name) %> ) {
-                service = <%= _.camelize(name) %> ;
+            inject(function ( <%= _.camelize(name) %>Service ) {
+                service = <%= _.camelize(name) %>Service ;
             });
         });
 

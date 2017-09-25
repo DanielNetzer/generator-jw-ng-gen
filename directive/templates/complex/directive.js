@@ -8,7 +8,13 @@
      */
     function <%= _.classify(name) %> () {
 
-        /***************** PRIVATE *******************/
+        function <%= _.classify(name) %>Controller () {
+            /***************** PRIVATE *******************/
+            var vm = this;
+
+            /****************** PUBLIC *******************/
+        }
+        
 
         /**
          * Directives link function
@@ -17,7 +23,7 @@
             // add logic here
         }
 
-        /****************** PUBLIC *******************/
+        
         var directive = {
             restrict: 'E',
             replace: true,
@@ -25,7 +31,10 @@
 
             },
             templateUrl: '<%= htmlPath %>',
-            link: _link
+            link: _link,
+            controller: <%= _.classify(name) %>Controller,
+            controllerAs: 'vm',
+            bindToController: true
         };
 
         return directive;

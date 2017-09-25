@@ -6,7 +6,7 @@
     /**
      * <%= _.classify(name) %> Object/function
      */
-    function <%= _.classify(name) %> () {
+    function <%= _.classify(name) %>Service () {
 
         /***************** PRIVATE *******************/
 
@@ -40,6 +40,6 @@
     /* ANGULAR */
     angular
         .module('<%= appname %>')
-        .factory('<%= _.camelize(name) %>', <%= _.classify(name) %> );
+        .factory('<%= _.camelize(name) %>Service', <%= _.classify(name) %>Service );
 
 })();
