@@ -1,24 +1,24 @@
 {
-    "name": "generator-jw-ng-gen",
-    "version": "1.0.19",
+    "name": "generator-robin-ng-gen",
+    "version": "1.1.0",
     "description": "Yeoman Angular Generator based on Angular Best Practices(Angular Style Guide).",
     "keywords": [
-    "yeoman-generator",
-    "angular"
-  ],
-    "homepage": "https://github.com/jonathanwax/generator-jw-ng-gen",
+        "yeoman-generator",
+        "angular"
+    ],
+    "homepage": "https://github.com/DanielNetzer/generator-jw-ng-gen",
     "bugs": {
-        "url": "https://github.com/jonathanwax/generator-jw-ng-gen/issues"
+        "url": "https://github.com/DanielNetzer/generator-jw-ng-gen/issues"
     },
     "author": {
-        "name": "Jonathan Wax",
+        "name": "Daniel Netzer",
         "email": "",
-        "url": "https://www.jonathanwax.com"
+        "url": ""
     },
     "main": "app/index.js",
     "repository": {
         "type": "git",
-        "url": "https://github.com/jonathanwax/generator-jw-ng-gen.git"
+        "url": "https://github.com/DanielNetzer/generator-jw-ng-gen.git"
     },
     "scripts": {
         "test": "mocha"

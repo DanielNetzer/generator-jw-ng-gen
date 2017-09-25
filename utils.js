@@ -171,15 +171,13 @@ exports.askForModule = function (type, that, cb) {
     //Tapas: commented as no need to show main app module in the list
     //choices.unshift(mainModule.name + ' (Primary Application Module)');
 
-    var prompts = [
-        {
-            name: 'module',
-            message: 'Which module would you like to place the new ' + type + '?',
-            type: 'list',
-            choices: choices,
-            default: 0
-        }
-    ];
+    var prompts = [{
+        name: 'module',
+        message: 'Which module would you like to place the new ' + type + '?',
+        type: 'list',
+        choices: choices,
+        default: 0
+    }];
 
     that.prompt(prompts, function (props) {
 
@@ -192,7 +190,7 @@ exports.askForModule = function (type, that, cb) {
         }
 
         // handle path correctly - cross platform
-        fileName = fileName.replace(/\\/g,"/");
+        fileName = fileName.replace(/\\/g, "/");
 
         var module = ngParseModule.parse(fileName);
 
@@ -220,23 +218,21 @@ exports.askForDir = function (type, that, module, ownDir, cb) {
 
     defaultDir = path.join(defaultDir, '/');
 
-    var dirPrompt = [
-        {
-            name: 'dir',
-            message: 'Where would you like to create the ' + type + ' files?',
-            default: defaultDir,
-            validate: function (dir) {
-                if (!module.primary) {
-                    //ensure dir is in module dir or subdir of it
-                    dir = path.resolve(dir);
-                    if (path.relative(that.dir, dir).substring(0, 2) === '..') {
-                        return 'Files must be placed inside the module directory or a subdirectory of the module.'
-                    }
+    var dirPrompt = [{
+        name: 'dir',
+        message: 'Where would you like to create the ' + type + ' files?',
+        default: defaultDir,
+        validate: function (dir) {
+            if (!module.primary) {
+                //ensure dir is in module dir or subdir of it
+                dir = path.resolve(dir);
+                if (path.relative(that.dir, dir).substring(0, 2) === '..') {
+                    return 'Files must be placed inside the module directory or a subdirectory of the module.'
                 }
-                return true;
             }
+            return true;
         }
-    ];
+    }];
 
     var dirPromptCallback = function (props) {
 

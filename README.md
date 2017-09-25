@@ -31,7 +31,7 @@ Prerequisites: Node, Grunt, Yeoman, and Bower.  Once Node is installed, do:
 
 Next, install jw-ng-gen generator:
 
-    npm install -g generator-jw-ng-gen
+    npm install -g generator-robin-ng-gen
 
 To create a project:
 
