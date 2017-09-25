@@ -47,6 +47,11 @@ Boom! See your application in action:
     grunt run  - it will open your chrome and run the application
     grunt e2e  - open new terminal and execute this to run e2e tests
 
+Migration
+-------------
+
+To migrate from an existing project that use either JW or APPGEN generators, go to the root directory and change .yo-rc.json file, change the first key of the json (e.g: "generator-jw-ng-gen") to "generator-robin-ng-gen".
+
 Directory Structure
 -------------
 
