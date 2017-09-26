@@ -11,10 +11,23 @@
         /**
          * Components Controller
          */
-        function <%= _.classify(name) %>Controller () {
+        function <%= _.classify(name) %>Controller ($log, $scope) {
             /***************** PRIVATE *******************/
+            // Get the $log object and notify it that the controller have been loaded.
+            $log = $log.getInstance('<%= _.classify(name) %>Controller', true);
+            $log.debug("load()");
+
+            // vm (view-model) will always bind to the controller's object and manage
+            // the objects we use in the .html file.
             var vm = this;
 
+            /**
+             * OnInit, this function is part of angularjs lifecycle and will initiate
+             * once all data have been passed to the controller.
+             */
+            vm.$onInit = function () {
+                $log.info('<%= _.classify(name) %>Controller init started');
+            };
             /****************** PUBLIC *******************/
         }
         
